@@ -20,20 +20,21 @@ const HomepageHero = () => {
           <p className="text-gray-600">Discover our collection of high-performance footwear</p>
         </div>
 
-        {/* Category Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-6">
-          {["all", "running", "training", "casual", "football"].map(cat => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat as any)}
-              className={`px-4 py-2 rounded-full font-semibold ${
-                selectedCategory === cat ? "bg-[#1F7A4D] text-white" : "bg-gray-200 text-gray-800"
-              }`}
-            >
-              {cat.toUpperCase()}
-            </button>
-          ))}
-        </div>
+      {/* Category Filter Buttons */}
+<div className="flex justify-center gap-4 mb-6 flex-wrap sm:flex-nowrap overflow-x-auto px-2">
+  {["all", "running", "training", "casual", "football"].map(cat => (
+    <button
+      key={cat}
+      onClick={() => setSelectedCategory(cat as any)}
+      className={`shrink-0 px-4 py-2 rounded-full font-semibold whitespace-nowrap ${
+        selectedCategory === cat ? "bg-[#1F7A4D] text-white" : "bg-gray-200 text-gray-800"
+      }`}
+    >
+      {cat.toUpperCase()}
+    </button>
+  ))}
+</div>
+
 
         {/* Products Grid */}
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
