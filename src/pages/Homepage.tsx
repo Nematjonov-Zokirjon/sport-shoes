@@ -1,5 +1,7 @@
 import HomepageCarusel from "../components/HomepageCarusel";
+import HomepageCarusel2 from "../components/HomepageCarusel2";
 import HomepageHero from "../components/HomepageHero";
+import ShoeReviews from "../components/ShoeReviews";
 
 const Homepage = () => {
 
@@ -18,6 +20,12 @@ const Homepage = () => {
           <HomepageHero />
         </div>
 
+        <div>
+          <HomepageCarusel2 />
+        </div>
+      <div>
+        <ShoeReviews />
+      </div>
       </div>
     </section>
   );

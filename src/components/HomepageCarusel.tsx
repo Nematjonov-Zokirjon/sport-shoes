@@ -76,6 +76,7 @@ export default function HomepageCarusel() {
                       <span className="inline-block text-black text-xs md:text-sm font-medium tracking-wide">
                         {slide.badge}
                       </span>
+                      
 
                       <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1F7A4D] text-balance leading-tight">
                         <Link to={"/product"}>{slide.title}</Link>
@@ -89,11 +90,12 @@ export default function HomepageCarusel() {
                     {/* Right Image */}
                     <Link to={"/product"}>
                       <div className="relative h-[220px] md:h-80 lg:h-[380px] flex items-center justify-center">
-                        <img
-                          src={slide.image || "/placeholder.svg"}
-                          alt="Product showcase"
-                          className="w-full h-full object-contain "
-                        />
+                       <img
+  src={slide.image || "/placeholder.svg"}
+  alt="Product showcase"
+  className="w-full h-full object-cover rounded-4xl shadow-lg shadow-black/20"
+/>
+
                       </div>
                     </Link>
                   </div>

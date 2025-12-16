@@ -15,7 +15,7 @@ const HomepageHero = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 text-center">
           <h1 className="mb-2 text-4xl font-bold uppercase tracking-tight text-gray-900">
-            Premium Sports Shoes
+           <span className="text-[#1F7A4D]">Premium</span>   Sports Shoes
           </h1>
           <p className="text-gray-600">Discover our collection of high-performance footwear</p>
         </div>
